@@ -1,5 +1,21 @@
-package org.example;public class Main {
+package org.example;
+
+import java.util.ArrayList;
+
+public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        //n queens problem
+        int n = 2;
+        Chessboard chessboard = new Chessboard(n);
+        int[][] result = chessboard.getFirst();
+        if (result != null) {
+            chessboard.printSolution(result);
+        } else {
+            System.out.println("No solution");
+        }
+
+        //Utopia Coins
+
+
     }
 }
